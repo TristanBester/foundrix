@@ -1,0 +1,17 @@
+defaults:
+  # - logger: base_logger
+  # - system: dqn
+  # - network: mlp_dqn
+  - env: jumanji/snake
+  - _self_
+  - override hydra/hydra_logging: disabled  
+  - override hydra/job_logging: disabled 
+
+hydra:
+  output_subdir: null  
+  run:  
+    dir: .
+  searchpath:
+    - file:///Users/tristan/Projects/foundrix/foundrix/config
+
+  
