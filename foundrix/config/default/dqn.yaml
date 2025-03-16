@@ -1,7 +1,7 @@
 defaults:
   # - logger: base_logger
-  # - system: dqn
-  # - network: mlp_dqn
+  - system: dqn
+  - network: mlp_dqn
   - env: jumanji/snake
   - _self_
   - override hydra/hydra_logging: disabled  

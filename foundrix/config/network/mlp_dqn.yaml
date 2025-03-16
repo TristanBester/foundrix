@@ -1,0 +1,9 @@
+# ---MLP DQN Networks---
+actor_network:
+  pre_torso:
+    _target_: foundrix.networks.torsos.MLPTorso
+    layer_sizes: [256, 256]
+    use_layer_norm: False
+    activation: silu
+  action_head:
+    _target_: foundrix.networks.heads.DiscreteQNetworkHead
