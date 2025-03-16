@@ -1,0 +1,7 @@
+# Files
+.env
+.DS_Store
+
+# Directories
+__pycache__
+.venv
